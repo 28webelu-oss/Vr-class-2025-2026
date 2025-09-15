@@ -7,38 +7,161 @@
         <a-camera>
             <a-cursor></a-cursor>
         </a-camera>
-        <a-box
-            position="0 1 -10"
-            depth="2"
-            height="2"
-            width="2"
-            animation="
-                property: rotation;
-                from: 0 0 0;
-                to: 360 360 360;
-                dur: 2000;
-                easing: linear;
-                loop: true;
-            "
-            animation__2="
-                property: position;
-                from: 0 1 -10;
-                to: 0 26 -20;
-                loop: true;
-                dir: alternate;
-                easing: easeInOutElastic;
-                dur: 500;
-            "
-            
-            color="tomato"
+       <a-box
+        position="0 1 -10"
+        depth="2" height="2" width="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 360 360 360;
+        dur: 2000; easing: linear;
+        loop: true;
+        "
+        animation__2="
+        property: position;
+        from: 0 1 -10; to: 0 26 -20;
+        loop: true; dir: alternate;
+        easing: easeInOutElastic; dur: 375;
+        "
+        color="tomato"
+        animation__3="
+        property:opacity;
+        from:1; to:0;
+        startEvents: click;
+        ">
+        </a-box>
+        <a-cone
+        position="-3 2 -10" radius-top="0"
+        radius-bottom="2" height="2"
+        color="gold" animation="
+        property: position;
+        from: -3 2 -10;
+        to: 65 -25 -100;
+        dur: 750;
+        easing: easeInOutElastic;
+        loop: true;
+        dir: alternate;
+        "
         animation__3="
         property:opacity;
         from:1;
         to:0;
         startEvents: click;
+        ">
+        </a-cone>
+        <a-tetrahedron
+        position="3 0 -7.5"
+        radius="2" color="blue"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 0 360 0;
+        dur: 2000; easing: linear;
+        loop: true;
         "
-        >
-        </a-box>
+        animation__1="
+        property: position;
+        from: 3 0 -7.5;
+        to: -65 -25 -100;
+        dur: 500;
+        easing: easeInOutElastic;
+        loop: true;
+        dir: alternate;
+        "
+        animation__3="
+        property:opacity;
+        from:1;
+        to:0;
+        startEvents: click;
+        ">
+        </a-tetrahedron>
+        <a-octahedron
+        position="0 4 -12"
+        radius="2.5" color="purple"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 0 360 0;
+        dur: 2000;
+        easing: linear; loop: true;
+        "
+        animation__1="
+        property: position;
+        from: 0 4 -12; to: 0 -42 -75;
+        loop: true; dir: alternate;
+        easing: easeInOutElastic; dur: 425;
+        "
+        animation__3="
+        property:opacity;
+        from:1; to:0;
+        startEvents: click;
+        ">
+        </a-octahedron>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="80" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 180 1440 0;
+        dur: 20000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="70" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 1620 -1440 0;
+        dur: 18000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="60" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: -1620 1440 0;
+        dur: 16000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="50" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 1620 0 0;
+        dur: 14000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="40" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: -1620 -1440 0;
+        dur: 12000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-torus 
+        position="0 100 -300" 
+        color="#43A367" arc="360" 
+        radius="30" radius-tubular="2"
+        animation="
+        property: rotation;
+        from: 0 0 0; to: 1620 1440 0;
+        dur: 10000; easing: linear;
+        loop: true;
+        "></a-torus>
+        <a-sphere
+        position="0 100 -300"
+        radius="6" color="gray"
+        animation__3="
+        property:opacity;
+        from:1; to:0;
+        startEvents: click;
+        "></a-sphere>
         </a-scene>
     </body>
 </html>
