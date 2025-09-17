@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera>
+                <a-cursor fuse="true" fuse-timeout="5000"></a-cursor>
+            </a-camera>
+        <a-box
+            position="-3 1 -7" depth="2"
+            height="2" width="2"
+            color="red" animation="
+                property: rotation;
+                from: 0 0 0; to: 0 360 0;
+                dur: 2000; easing: linear;
+                loop: true;"
+            animation__1="
+                property: position;
+                from: -3 1 -7; to: -3 0 -7;
+                dur: 1000; dir: alternate;
+                easing: linear; loop: true;"
+            animation__3="
+                property:opacity;
+                from:1; to:0;
+                startEvents: click;"
+        >
+        </a-box>
+        <a-tetrahedron 
+            position="3 1 -7" radius="1.5"
+            color="blue" animation="
+                property: rotation;
+                from: 0 0 0; to: 0 360 0;
+                dur: 2000; easing: linear;
+                loop: true;"
+            animation__1="
+                property: position;
+                from: 3 1 -7; to: 3 0 -7;
+                dur: 1000; dir: alternate;
+                easing: linear; loop: true;"
+            animation__3="
+                property:opacity;
+                from:1; to:0;
+                startEvents: click;"
+        >
+        </a-tetrahedron>
+        </a-scene>
+    </body>
+</html>
